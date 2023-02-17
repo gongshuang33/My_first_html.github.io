@@ -1,0 +1,73 @@
+body{
+	background-color:rgb(235, 235, 202);
+
+}
+nav,#computeDemo{
+	font-size: 20px;
+	font-weight: 500px;
+	text-align: center;
+	border: dashed 1px black;
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+table,th,tr,td{
+border:1px solid black;
+padding:5px 10px;
+text-align: center;
+}
+td{
+	color: coral;
+}
+#td1,#td2,#td3,#td4,#td5,#td6,#td7,#td8,#td9,#td10{
+	color: #000000;
+	font-size: 16px;
+}
+thead{
+	background: #FFA500;
+}
+header{
+	height: 90px;
+	background: url(../img/湖北大学绿色背景.png) no-repeat;
+	text-align: center;
+	max-width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+table{
+	width: 980px;
+	background-image: url(../img/QQ图片20190425200611.jpg);
+	text-align: center;
+	max-width: 980px;
+	position: relative;
+	margin: 0 auto;
+}
+#computeDemo{
+	font-size: 15px;
+	font-weight: 500px;
+	
+	text-align: center;
+	border: dashed 1.5px darkblue;
+	max-width: 980px;
+	position: relative;
+	margin: 0 auto;
+}
+#echartsTest{
+	width: 980px;
+	height: 500px;
+	text-align: center;
+	background-color: aliceblue
+	position: relative;
+	margin: 0 auto;
+	border:2px solid skyblue;
+	
+}
+#echartsTest2{
+	width: 980px;
+	height: 500px;
+	text-align: center;
+	position: relative;
+	margin: 0 auto;
+	border:2px solid skyblue;
+	
+}

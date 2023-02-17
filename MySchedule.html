@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<header>
+	</header>
+	<link rel="stylesheet" type="text/css" href="css/MySchedule.css"/>
+	<script type="text/javascript" src="js/MySchedule.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/echarts/4.2.1/echarts.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  
+	<body>
+		<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+			<ul class="navbar-nav">
+			  <li class="nav-item active">
+				<a class="nav-link" href="My First Html.html">首页</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="baidumap.html">百度地图API</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="MyTable.html">HtmlTable</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link disabled" href="pay1.html">打赏</a>
+			  </li>
+			</ul>
+		  </nav>
+
+		  <hr>
+
+		<section>
+			<article>
+				<script>
+					alert('现在的时间是：'+Date())
+				</script>
+				<table border="1",ccellspacing="0" cellpadding="0">
+					<thead>
+						<th>时间</th>
+						<th>星期一</th>
+						<th>星期二</th>
+						<th>星期三</th>
+						<th>星期四</th>
+						<th>星期五</th>
+						<th>星期六</th>
+						<th>星期日</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td id="td1">7:00~7:30</td>
+							<td colspan="5">起床、洗漱</td>
+							<td colspan="2">睡觉</td>
+						</tr>
+						<tr>
+							<td id="td2">7:30~8:00</td>
+							<td colspan="5">过早、去教室</td>
+							<td colspan="2">起床、洗漱</td>
+						</tr>
+						<tr>
+							<td id="td3">8:00~9:40</td>
+							<td>上英语课</td>
+							<td>上化学课</td>
+							<td>跑步，背书</td>
+							<td>上英语听力课</td>
+							<td>英语听说训练</td>
+							<td colspan="2">跑步</td>
+							
+							
+						</tr>
+						<tr>
+							<td id="td4">9:40~9:55</td>
+							<td colspan="5">大课间（换教室、休息）</td>
+							<td rowspan="8">出去逛街，参加一些课外活动</td>
+							<td rowspan="2">写作业，预习复习</td>
+						</tr>
+						<tr>
+							<td id="td4">9:55~11:35</td>
+							<td>写英语作业</td>
+							<td>上体育课</td>
+							<td>上历史课</td>
+							<td>看书</td>
+							<td>上数学课</td>
+							
+							
+						</tr>
+						<tr>
+							<td id="td5">11:35~14:00</td>
+							<td colspan="5">吃饭、娱乐、午休</td>
+							<td>吃饭，娱乐，午休</td>
+						</tr>
+						<tr>
+							<td id="td6">14:00~15:40</td>
+							<td>上高数课</td>
+							<td>上C语言</td>
+							<td>上高数课</td>
+							<td>上计算机课</td>
+							<td>上物理课</td>
+							
+							<td rowspan="4">户外活动</td>
+						</tr>
+						<tr>
+							<td id="td6">15:40~15:55</td>
+							<td colspan="5">大课间（换教室、休息）</td>
+						</tr>
+						<tr>
+							<td id="td7">15:55~15:35</td>
+							<td>写高数作业</td>
+							<td>上物理课</td>
+							<td>写作业</td>
+							<td>上化学课</td>
+							
+							<td>写作业</td>
+						</tr>
+						<tr>
+							<td id="td8">17:35~18:50</td>
+							<td colspan="5">吃晚饭、散步、听歌</td>
+							
+						
+						</tr>
+						<tr>
+							<td id="td9">18:50~21:10</td>
+							<td>散步</td>
+							<td>上网页设计与地图应用课</td>
+							<td>写作业</td>
+							<td>写作业</td>
+							<td>上ExcelVBA课</td>
+							
+							<td>看书，整理</td>
+						</tr>
+						<tr>
+							<td id="td9">21:10~23:30</td>
+							<td colspan="7">洗澡 洗衣服 看书 娱乐</td>
+						</tr>
+						<tr>
+							<td id="td10">23:30~7:00</td>
+							<td colspan="7">睡觉 晚安</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+		<br>
+			
+		
+		<p id="computeDemo">
+			请输入数字：<input type="text" id="txt_a" value="" />
+			<!--定义下拉列表选项-->
+			<select name="选择运算符" id="computeType";>
+				<option value="add">+</option>
+				<option value="minus">-</option>
+				<option value="multiply">*</option>
+				<option value="divide">/</option>
+			</select>
+			<!--文本控制例子-->
+			<input type="number" id="txt_b" value=""/>
+			=
+			<input type="number" id="txt_c" value=""/>
+			<!--按钮控制例子-->
+			<input type="button" id="btn_compute" value="点我来计算" onclick="compute()"/>
+			<input type="button" id="btn_loadEcharts" value="加载体测成绩图" onclick="loadEcharts()"/>
+			<input type="button" id="btn_loadEcharts2" value="加载日常时间图" onclick="loadEcharts2()"/>
+		</p>
+		<br>
+		<p id="echartsTest">
+			
+		</p>
+		<p id="echartsTest2">
+			
+		</p>
+	</body>
+</html>
